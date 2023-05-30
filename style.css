@@ -40,19 +40,74 @@ body {
   color: #555;
 }
 
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
 .hero {
   max-width: 130rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 9.6rem;
 }
 
 .heading-primary {
-  font-size: 6.2rem;
+  font-size: 5.2rem;
   font-weight: 600;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
 }
+
+.hero-description {
+  font-size: 2rem;
+  margin-bottom: 4.8rem;
+}
+
+/*Buttons HEADER*/
+
+.btn:link, 
+.btn:visited {
+  background-color: #e67e22;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  text-decoration: none;
+
+  transition: all 0.3s ease-in;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+} 
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf7111;
+} 
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+} 
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+
+  border: 3px solid #fdf2e9;
+} 
 
 .hero-img {
   width: 100%;
 }
 
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
